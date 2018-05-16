@@ -8,7 +8,7 @@ import utils from './utils';
 
 var vendorListService = (function () {
     // TODO: This should be changed to be a publisher specific API
-    var GET_VENDOR_LIST_API = 'https://service.cmp.oath.com/cmp/v0/vendor_list/global';
+    var GET_VENDOR_LIST_API = 'https://cdn.stroeerdigitalgroup.de/metatag/consent/globalVendors.json';
 
     var cachedVendorLists = {};
     var vendorListCallbacks = {};
@@ -28,7 +28,6 @@ var vendorListService = (function () {
             }
             paramsStr = '?' + paramsArr.join('&');
         }
-
         utils.ajax(apiUrl + paramsStr, function (response, status) {
             if (status === 200) {
                 callback(response, true);
@@ -51,7 +50,7 @@ var vendorListService = (function () {
             vendorListCallbacks[version].push(callback);
         } else {
             vendorListCallbacks[version] = [callback];
-            var params = utils.isNumeric(version) ? {version: version} : {};
+            var params = utils.isNumeric(version) ? {version: version} : null;
             callVendorListAPI(GET_VENDOR_LIST_API, params, function (response, success) {
                 cachedVendorLists[version] = response;
                 while (vendorListCallbacks[version].length) {

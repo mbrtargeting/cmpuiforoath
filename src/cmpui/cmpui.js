@@ -93,6 +93,9 @@ window.__cmpui = new function (win) {
             // pass the purposes and vendors to the relevant controllers
             purposesCtrl.setPurposes(vendorList.purposes);
             vendorsCtrl.setVendors(vendorList.vendors);
+            if(customParameters.pubName){
+                document.getElementById('publisherName').innerText = customParameters.pubName;
+            }
 
             if (skipInitialScreen) {
                 renderView('purposes');
@@ -157,6 +160,7 @@ window.__cmpui = new function (win) {
                 if (command === 'renderConsentUI') {
                     // store the callId for use when sending the __cmpUIReturn message
                     renderConsentUICallId = callId;
+                    window.customParameters = parameter.uiConfig.customParams;
 
                     // check for a parameter.EuConsent value.  If it exists, then the
                     // user has previously provided their consents.  This scenario occurs

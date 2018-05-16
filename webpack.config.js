@@ -51,10 +51,10 @@ const commonConfig = assetPath => {
                 chunks: ['cmpui'],
                 filename: './cmpui.html',
                 minify: {
-                    collapseWhitespace: true,
-                    minifyCSS: true,
-                    minifyJS: true,
-                    removeComments: true
+                    collapseWhitespace: false,
+                    minifyCSS: false,
+                    minifyJS: false,
+                    removeComments: false
                 }
             }),
             new CopyWebpackPlugin([
@@ -79,7 +79,7 @@ const commonConfig = assetPath => {
 // * * * * * Production Config * * * * * //
 
 const productionConfig = {
-    plugins: [new CleanWebpackPlugin(['build']), new UglifyJSPlugin()]
+    plugins: [new CleanWebpackPlugin(['build'])/**, new UglifyJSPlugin()*/]
 };
 
 // * * * * * Development Config * * * * * //
