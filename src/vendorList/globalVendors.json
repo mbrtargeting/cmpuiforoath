@@ -5,7 +5,7 @@
         {
             "id": 1,
             "name": "Informationsspeicherung und Zugriff",
-            "description": "Speicherung von Informationen oder Zugriff auf Informationen, die bereits auf Ihrem Ger&auml;t gespeichert sind, z. B. Werbe-IDs, Geräte-IDs, Cookies und ähnliche Technologien."
+            "description": "Speicherung von Informationen oder Zugriff auf Informationen, die bereits auf Ihrem Gerät gespeichert sind, z. B. Werbe-IDs, Geräte-IDs, Cookies und ähnliche Technologien."
         }, {
             "id": 2,
             "name": "Personalisierung",
@@ -17,7 +17,7 @@
         }, {
             "id": 4,
             "name": "Inhaltsauswahl, Zustellung, Berichterstattung",
-            "description": "The collection of information, and combination with previously collected information, to select and deliver content for you, and to measure the delivery and effectiveness of such content. This includes using previously collected information about your interests to select content, processing data about what content was shown, how often or how long it was shown, when and where it was shown, and whether the you took any action related to the content, including for example clicking on content. This does not include personalisation, which is the collection and processing of information about your use of this service to subsequently personalise content and/or advertising for you in other contexts, such as websites or apps, over time."
+            "description": "Erfassung von Informationen und Kombination mit zuvor gesammelten Informationen, um Werbung individuell für Sie auszuwählen und die Auslieferung und Wirksamkeit solcher Werbung zu bemessen. Dies beinhaltet die Verwendung zuvor gesammelter Informationen über Ihre Interessen, um Inhalte auszuwählen und die Verarbeitung von Daten darüber, welcher Inhalt gezeigt wurde, wie oft oder wie lange er angezeigt wurde, wann und wo er gezeigt wurde und ob Sie irgendwelche Maßnahmen in Bezug auf den Inhalt ergriffen haben, wie z.B. das Klicken auf bestimmte Inhalte. Dies umfasst nicht die Personalisierung, d.h. die Sammlung und Verarbeitung von Informationen über Ihre Nutzung dieses Dienstes, um Inhalte und / oder Werbung für Sie anschließend in anderen Kontexten wie Websites oder Apps zu personalisieren."
         }, {
             "id": 5,
             "name": "Vermessung",
