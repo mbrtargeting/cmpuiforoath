@@ -7,8 +7,6 @@
 import utils from './utils';
 
 var vendorListService = (function () {
-    // TODO: This should be changed to be a publisher specific API
-    var GET_VENDOR_LIST_API = 'https://cdn.stroeerdigitalgroup.de/metatag/consent/globalVendors.json';
 
     var cachedVendorLists = {};
     var vendorListCallbacks = {};
@@ -51,7 +49,7 @@ var vendorListService = (function () {
         } else {
             vendorListCallbacks[version] = [callback];
             var params = utils.isNumeric(version) ? {version: version} : null;
-            callVendorListAPI(GET_VENDOR_LIST_API, params, function (response, success) {
+            callVendorListAPI(window.customParameters.apiUrl, params, function (response, success) {
                 cachedVendorLists[version] = response;
                 while (vendorListCallbacks[version].length) {
                     vendorListCallbacks[version].shift()(cachedVendorLists[version], success);
