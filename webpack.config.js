@@ -79,7 +79,7 @@ const commonConfig = assetPath => {
 // * * * * * Production Config * * * * * //
 
 const productionConfig = {
-    plugins: [new CleanWebpackPlugin(['build'])/**, new UglifyJSPlugin()*/]
+    plugins: [new CleanWebpackPlugin(['build']), new UglifyJSPlugin()]
 };
 
 // * * * * * Development Config * * * * * //
