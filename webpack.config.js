@@ -41,7 +41,7 @@ const commonConfig = assetPath => {
         },
         output: {
             filename: '[name].js',
-            path: path.resolve(__dirname, 'build'),
+            path: path.resolve(__dirname, 'build/eng'),
             publicPath: assetPath.baseDir
         },
         plugins: [
