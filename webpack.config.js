@@ -51,10 +51,10 @@ const commonConfig = assetPath => {
                 chunks: ['cmpui'],
                 filename: './cmpui.html',
                 minify: {
-                    collapseWhitespace: false,
-                    minifyCSS: false,
-                    minifyJS: false,
-                    removeComments: false
+                    collapseWhitespace: true,
+                    minifyCSS: true,
+                    minifyJS: true,
+                    removeComments: true
                 }
             }),
             new CopyWebpackPlugin([
