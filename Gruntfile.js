@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 						CacheControl: 'max-age:900',
 						ContentEndocoding: 'gzip'
 					},
-					bucket: 'stroeer-consentmanager-live-eu',
+					bucket: 'stroeer-consentmanager-live-eu.stroeerdigitalgroup.de',
 					region: 'eu-central-1',
 					sslEnabled: true,
 					maxRetries: 3,
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
 						CacheControl: 'max-age:900',
 						ContentEndocoding: 'gzip'
 					},
-					bucket: 'stroeer-consentmanager-live-eu',
+					bucket: 'stroeer-consentmanager-live-eu.stroeerdigitalgroup.de',
 					region: 'eu-central-1',
 					sslEnabled: true,
 					maxRetries: 3,
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
 						CacheControl: 'max-age:900',
 						ContentEndocoding: 'gzip'
 					},
-					bucket: 'stroeer-consentmanager-live-eu',
+					bucket: 'stroeer-consentmanager-live-eu.stroeerdigitalgroup.de',
 					region: 'eu-central-1',
 					sslEnabled: true,
 					maxRetries: 3,
