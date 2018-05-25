@@ -160,7 +160,12 @@ window.__cmpui = new function (win) {
 				if (command === 'renderConsentUI') {
 					// store the callId for use when sending the __cmpUIReturn message
 					renderConsentUICallId = callId;
-					window.customParameters = parameter.uiConfig.customParams;
+					if(!!parameter.uiConfig){
+						window.customParameters = parameter.uiConfig.customParams;
+					}
+					if(!!parameter.uiCustomParams){
+						window.customParameters = parameter.uiCustomParams;
+					}
 					if(window.customParameters.apiUrl){
 						window.apiUrl = window.customParameters.apiUrl;
 					}
