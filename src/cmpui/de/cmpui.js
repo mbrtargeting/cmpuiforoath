@@ -20,10 +20,10 @@ import purposesCtrl from './purposes/purposes';
 import vendorsCtrl from './vendors/vendors';
 import confirmCtrl from './confirm/confirm';
 
-import consentData from '../utilities/consentData';
-import vendorListService from '../utilities/vendorListService';
+import consentData from '../../utilities/consentData';
+import vendorListService from '../../utilities/vendorListService';
 
-import utils from '../utilities/utils';
+import utils from '../../utilities/utils';
 window.customParameters = {};
 window.__cmpui = new function (win) {
 	if (win.__cmpui) {

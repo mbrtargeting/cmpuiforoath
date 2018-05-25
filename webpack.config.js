@@ -14,7 +14,7 @@ const extractLESS = new ExtractTextPlugin('cmpui.css');
 const commonConfig = assetPath => {
     return {
         entry: {
-            cmpui: './src/cmpui/cmpui.js'
+            cmpui: './src/cmpui/de/cmpui.js'
         },
         module: {
             rules: [
@@ -47,7 +47,7 @@ const commonConfig = assetPath => {
         plugins: [
             new HtmlWebpackPlugin({
                 inject: false,
-                template: './src/cmpui/cmpui.html',
+                template: './src/cmpui/de/cmpui.html',
                 chunks: ['cmpui'],
                 filename: './cmpui.html',
                 minify: {
@@ -58,7 +58,7 @@ const commonConfig = assetPath => {
                 }
             }),
             new CopyWebpackPlugin([
-                {from: 'src/cmpui/images/*', to: 'images', flatten: true}
+                {from: 'src/cmpui/de/images/*', to: 'images', flatten: true}
             ]),
             new webpack.DefinePlugin({
                 'process.env.ASSET_PATH': JSON.stringify(assetPath)
