@@ -29,7 +29,7 @@ module.exports = function (grunt) {
 			},
 			uploadCmp: {
 				cwd: 'src/controller',
-				src: 'cmp3p.js',
+				src: '**',
 				options: {
 					headers: {
 						CacheControl: 'max-age:900',
