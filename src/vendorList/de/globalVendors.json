@@ -1405,6 +1405,34 @@
             "purposeIds": [],
             "legIntPurposeIds": [1, 2, 3, 4, 5],
             "featureIds": []
+        }, {
+            "id": 15600,
+            "name": "Google DoubleClick",
+            "policyUrl": "https://policies.google.com/privacy",
+            "purposeIds": [1, 2, 3, 4, 5],
+            "legIntPurposeIds": [],
+            "featureIds": [1, 2, 3]
+        }, {
+            "id": 15601,
+            "name": "Google AdSense",
+            "policyUrl": "https://policies.google.com/privacy",
+            "purposeIds": [1, 2, 3, 4, 5],
+            "legIntPurposeIds": [],
+            "featureIds": [1, 2, 3]
+        }, {
+            "id": 15602,
+            "name": "Google Ad Exchange",
+            "policyUrl": "https://policies.google.com/privacy",
+            "purposeIds": [1, 2, 3, 4, 5],
+            "legIntPurposeIds": [],
+            "featureIds": [1, 2, 3]
+        }, {
+            "id": 15603,
+            "name": "Google AdSense",
+            "policyUrl": "https://policies.google.com/privacy",
+            "purposeIds": [1, 2, 3, 4, 5],
+            "legIntPurposeIds": [],
+            "featureIds": [1, 2, 3]
         }
     ]
 }
