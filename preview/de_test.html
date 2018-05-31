@@ -6,7 +6,6 @@
 
     <!--<meta name="keywords" content="DSL, T-DSL, Telefonbuch, Routenplaner, Nachrichten, Spiele, Shopping, Service"/>-->
     <title>SDG MetaTag Testseite</title>
-    <!--<script type="text/javascript" src="praeludium_mensh.js"></script>-->
     <style>
         * {
             margin: 0;
@@ -110,12 +109,12 @@
         todo change URL to your localhost:port
     -->
 
-    <script type="text/javascript" src="https://s3.eu-central-1.amazonaws.com/stroeer-consentmanager-live-eu/cmp3p.js" async>
+    <script type="text/javascript" src="https://consent.stroeerdigitalgroup.de/cmp3p.js" async>
         window.test123 = 'hallo';
     </script>
     <!-- Consent Manager Tag : Stubbed-->
     <script type="text/javascript">
-	    !function(){var e=!0;function a(e){var a="string"==typeof e.data,n=a&&"{"===e.data.substr(0,1);if(a&&n){var t=JSON.parse(e.data);if(t.__cmpCall){var o=t.__cmpCall;window.__cmp(o.command,o.parameter,function(n,t){var c={__cmpReturn:{returnValue:n,success:t,callId:o.callId}};e.source.postMessage(a?JSON.stringify(c):c,"*")})}}}!function e(){if(!window.frames.__cmpLocator)if(document.body){var a=document.body,n=document.createElement("iframe");n.style="display:none",n.name="__cmpLocator",a.appendChild(n)}else setTimeout(e,5)}(),"function"!=typeof __cmp&&(window.__cmp=function(){var a=arguments;if(__cmp.a=__cmp.a||[],!a.length)return __cmp.a;"ping"===a[0]?a[2]({gdprAppliesGlobally:e,cmpLoaded:!1},!0):__cmp.a.push([].slice.apply(a))},__cmp.msgHandler=a,window.addEventListener?window.addEventListener("message",a,!1):window.attachEvent("onmessage",a)),window.sdgCmpApiUrl="https://s3.eu-central-1.amazonaws.com/stroeer-consentmanager-live-eu/globalVendors.json"}();
+	    !function(){var e=!0;function a(e){var a="string"==typeof e.data,n=a&&"{"===e.data.substr(0,1);if(a&&n){var t=JSON.parse(e.data);if(t.__cmpCall){var o=t.__cmpCall;window.__cmp(o.command,o.parameter,function(n,t){var c={__cmpReturn:{returnValue:n,success:t,callId:o.callId}};e.source.postMessage(a?JSON.stringify(c):c,"*")})}}}!function e(){if(!window.frames.__cmpLocator)if(document.body){var a=document.body,n=document.createElement("iframe");n.style="display:none",n.name="__cmpLocator",a.appendChild(n)}else setTimeout(e,5)}(),"function"!=typeof __cmp&&(window.__cmp=function(){var a=arguments;if(__cmp.a=__cmp.a||[],!a.length)return __cmp.a;"ping"===a[0]?a[2]({gdprAppliesGlobally:e,cmpLoaded:!1},!0):__cmp.a.push([].slice.apply(a))},__cmp.msgHandler=a,window.addEventListener?window.addEventListener("message",a,!1):window.attachEvent("onmessage",a)),window.sdgCmpApiUrl="https://consent.stroeerdigitalgroup.de/de/globalVendors.json"}();
 
 
 
@@ -136,7 +135,7 @@
     <script type="text/javascript">
         window.__cmp('init', {
             customConsentUI:{
-                url: "https://s3.eu-central-1.amazonaws.com/stroeer-consentmanager-live-eu/cmpui.html",
+                url: "https://consent.stroeerdigitalgroup.de/de/cmpui.html",
                 customParams: {
                     pubName: location.host,
                     apiUrl: window.sdgCmpApiUrl

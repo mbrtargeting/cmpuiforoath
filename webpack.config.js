@@ -97,7 +97,9 @@ const developmentConfig = {
 
 const ASSET_PATHS = {
     dev: {},
-    prod: {}
+    prod: {
+
+    }
 };
 
 module.exports = env => {
