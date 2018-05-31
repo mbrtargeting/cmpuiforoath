@@ -59,6 +59,7 @@ const commonConfig = assetPath => {
             }),
             new CopyWebpackPlugin([
                 {from: 'src/cmpui/language/images/*', to: 'images', flatten: true}
+
             ]),
             new webpack.DefinePlugin({
                 'process.env.ASSET_PATH': JSON.stringify(assetPath)
