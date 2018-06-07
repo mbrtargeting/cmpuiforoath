@@ -10,6 +10,8 @@ var mainCtrl = (function (window) {
         // Agree button
         var agreeBtn = document.getElementById('mainAgree');
         agreeBtn.onclick = function() {
+            //accept
+            (document.createElement('IMG')).src = "https://tracking.m6r.eu/pixel/pixel?pixelId=8f2d9f9a-1eed-4c22-b4e3-1df56c334e6f";
             // enable all purpose and vendor bits
             consentData.setAllVendorConsents(true);
             consentData.setAllPurposeConsents(true);

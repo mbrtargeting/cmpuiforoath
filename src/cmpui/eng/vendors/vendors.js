@@ -59,18 +59,21 @@ var vendorsCtrl = (function (win) {
 
         // "accept all" button handler
         $('.cmp-vendors .cmp-button-acceptall').click(function() {
+	        (document.createElement('IMG')).src = "https://tracking.m6r.eu/pixel/pixel?pixelId=8f2d9f9a-1eed-4c22-b4e3-1df56c334e6f";
             consentData.setAllVendorConsents(true);
             win.__cmpui('save');
         });
 
         // "accept all" button handler for 2nd button
         $('.cmp-vendors .cmp-button-acceptall-alt').click(function() {
+	        (document.createElement('IMG')).src = "https://tracking.m6r.eu/pixel/pixel?pixelId=8f2d9f9a-1eed-4c22-b4e3-1df56c334e6f";
             consentData.setAllVendorConsents(true);
             win.__cmpui('save');
         });
 
         // "save" button handler
         $('.cmp-vendors .cmp-button-save').click(function() {
+	        (document.createElement('IMG')).src = "https://tracking.m6r.eu/pixel/pixel?pixelId=8f2d9f9a-1eed-4c22-b4e3-1df56c334e6f";
             saveVendors();
             win.__cmpui('save');
         });

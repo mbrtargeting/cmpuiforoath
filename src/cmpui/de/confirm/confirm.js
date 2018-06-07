@@ -17,6 +17,7 @@ var confirmCtrl = (function () {
         var leaveButton = document.getElementById('confirmLeave');
         leaveButton.onclick = function () {
             // reject all consents
+	        (document.createElement('IMG')).src = "https://tracking.m6r.eu/pixel/pixel?pixelId=b13c9668-15b1-4e61-98a1-8382885104d5";
             consentData.setAllPurposeConsents(false);
             consentData.setAllVendorConsents(false);
             // save
