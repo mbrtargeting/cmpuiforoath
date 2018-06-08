@@ -37,17 +37,25 @@ html, body {
 .cmp-button-primary {
   background: #2D6AB1;
   color: #ffffff;
-  font-weight: medium;
+  font-weight: normal;
   font-size: 22px;
   border-radius: 4px;
   cursor: pointer;
 }
+.cmp-button-link {
+  color: #006CB7;
+  background: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+}
+
 
 .cmp-button-default {
   background: #ffffff;
   border: 1px solid #2D6AB1;
   color: #2D6AB1;
-  font-weight: medium;
+  font-weight: normal;
   font-size: 22px;
   border-radius: 4px;
   cursor: pointer;
@@ -85,7 +93,7 @@ html, body {
     .cmp-header-title {
       color: #ffffff;
       font-size: 32px;
-      font-weight: medium;
+      font-weight: normal;
     }
   }
 
@@ -144,7 +152,7 @@ html, body {
       }
 
       .cmp-button-bar {
-        display: flex;
+        display: block;
         margin-top: 30px;
         margin-bottom: 30px;
 
@@ -200,7 +208,7 @@ html, body {
           padding-right: 0 !important;
           width: 100% !important;
           height: 181px !important;
-          min-width: 0px !important;
+          min-width: 0 !important;
           min-height: 181px !important;
           flex: 0 !important;
         }
@@ -217,8 +225,8 @@ html, body {
         }
 
         .cmp-button-bar {
-          display: flex;
           position: fixed;
+          display: flex;
           flex-direction: row-reverse;
           margin: 0 -25px;
           bottom: 0;
@@ -232,6 +240,7 @@ html, body {
             margin: 0 !important;
 
             &.cmp-button-default {
+              font-size: 5.5vw;
               border-top: 1px solid #ccc;
             }
           }
@@ -250,15 +259,22 @@ html, body {
   .cmp-button-back {
     display: none;
   }
+  .cmp-button-primary {
+    font-size: 5.5vw;
+  }
+  .cmp-button-link {
+    font-size: 5vw;
+  }
 
   .cmp-button-acceptall-alt {
     .cmp-button-link;
     float: right;
-    display: inline-block !important;
+    display: inline-block;
   }
 
   .cmp-button-save {
     display: inline-block;
+    font-size: 5vw;
   }
 
   &.no-selections {
